@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+}
+
+
+
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button.visible {
+  opacity: 1;
 }
