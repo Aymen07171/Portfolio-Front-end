@@ -45,6 +45,10 @@ function App() {
     {id: "GitHub", content : "https://github.com/Aymen07171"}
   )
 
+  const [gitcv,setGitcv] = useState(
+    {id:"CV", content:"https://drive.google.com/file/d/1W5zXOHj2s2L11ssG_HRKUA8M_M7bfx2u/view?usp=sharing"}
+  )
+
   const [linkedln, setlinkedln] = useState(
     {id : "Linkedln", content : "https://www.linkedin.com/in/ayman-el-attar-50a37620a/  "}
   )
@@ -105,6 +109,7 @@ function App() {
       <NavReseaux
         github={github}
         linkedln={linkedln}
+        gitcv = {gitcv}
       />
       <Home
         textBlue={textBlueHome}
@@ -112,6 +117,7 @@ function App() {
         sousTitre={sousTitreHome}
         text={textHome}
         github={github}
+        gitcv = {gitcv}
       />
       <Competence
         devFront={devFront}

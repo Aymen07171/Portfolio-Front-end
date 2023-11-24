@@ -27,8 +27,25 @@ function Home(props) {
           data-aos-duration="2000"
           data-aos-delay="2000"
           target="_blank"
+          style={{ marginBottom: '20px' }}
+
         >
+      
           {props.github.id}
+          
+        </a>
+        {'                            '}
+
+        <a
+          href={props.gitcv.content}
+          rel="noreferrer"
+          className="transition delay-300 box-border px-10 py-2 mt-10 border rounded border-cyan-300 text-center text-cyan-300 text-xl hover:bg-cyan-300/10"
+          data-aos="fade"
+          data-aos-duration="2000"
+          data-aos-delay="2000"
+          target="_blank"
+        >
+           {props.gitcv.id}
         </a>
       </div>
     </div>
